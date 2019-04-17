@@ -18,6 +18,7 @@
     "font-awesome": "^4.7.0",
     "http-errors": "~1.6.2",
     "jquery": "^3.4.0",
+    "mongodb": "^3.2.3",
     "mongoose": "^5.5.2",
     "morgan": "~1.9.0",
     "popper.js": "^1.15.0"
@@ -41,5 +42,6 @@
   "bugs": {
     "url": "https://github.com/sjtype/COMP308-W2019-Lesson4B/issues"
   },
-  "homepage": "https://github.com/sjtype/COMP308-W2019-Lesson4B#readme"
+  "homepage": "https://github.com/sjtype/COMP308-W2019-Lesson4B#readme",
+  "keywords": []
 }
