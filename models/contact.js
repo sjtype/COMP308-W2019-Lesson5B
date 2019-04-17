@@ -7,7 +7,7 @@ let contactSchema = mongoose.Schema({
     age: Number
 },
 {
-    collection: "first"
+    collection: "first" // collection is like a table (document is like a record)
 });
 
-module.exports = mongoose.model('test', contactSchema);
+module.exports = mongoose.model('contact', contactSchema);
