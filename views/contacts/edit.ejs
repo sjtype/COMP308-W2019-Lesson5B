@@ -1,6 +1,6 @@
 <% include ../partials/header.ejs %>
 
-<!-- Content for the Add page -->
+<!-- Content for the Edit page -->
 <div class="container">
     <div class="row">
         <div class="col-md-offset-3 col-md-6">
@@ -13,6 +13,7 @@
                         id="FirstNameTextField" 
                         placeholder="Enter First Name" 
                         name="firstName"
+                        value="<%= contact.firstName %>"
                         required>
 
                 </div>
@@ -23,6 +24,7 @@
                         id="LastNameTextField" 
                         placeholder="Enter Last Name" 
                         name="lastName"
+                        value="<%= contact.lastName %>"
                         required>
 
                 </div>
@@ -33,16 +35,15 @@
                         id="AgeTextField" 
                         placeholder="Enter Age" 
                         name="age"
+                        value="<%= contact.age %>"
                         required>
 
                 </div>
 
                 <button type="submit" class="btn btn-primary">
-                    <i class="fa fa-pencil-square"></i> Submit</button>
+                    <i class="fa fa-pencil-square"></i> Edit</button>
                 <a href="/contact-list" class="btn btn-warning">
                     <i class="fa fa-undo"></i> Cancel</a>
-                    <a href="/contact-list/add" class="btn btn-danger">
-                        <i class="fa fa-eraser"></i> Reset</a>
 
 
             </form>

@@ -1,11 +1,17 @@
 // IIFE -- Immediately Invoked Function Expression
-(function(){
+(function() {
+  function Start() {
+    console.log(
+      "%c App Started...",
+      "font-size: 20 px; color: blue; font-weight: bold;"
+    );
+    $(".btn-danger").click(function(event) {
+      if (!confirm("Are you sure?")) {
+        event.preventDefault();
+        window.location.assign("/contact-list");
+      }
+    });
+  }
 
-    function Start() {
-        console.log('%c App Started...', 
-        "font-size: 20 px; color: blue; font-weight: bold;")
-
-    }
-
-    window.addEventListener("load", Start);
+  window.addEventListener("load", Start);
 })();
