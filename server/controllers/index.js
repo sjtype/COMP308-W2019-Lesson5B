@@ -16,5 +16,5 @@ module.exports.displayServicesPage = (req, res, next) => {
 };
 
 module.exports.displayContactPage = (req, res, next) => {
-  res.render("index", { title: "Contact" });
+  res.render("index", { title: "Contact" }); // for the assignment, don't use index. Use a contact.ejs page
 };
